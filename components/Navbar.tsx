@@ -6,7 +6,7 @@ import { CustomButton } from "./CustomButton"
 export const Navbar = () => {
   return (
     <header className="w-full absolute z-10">
-        <nav className="max-width-[1440px] max-auto flex justify-between items-center sm:px-16 px-6 py-14">
+        <nav className="max-width-[1440px] max-auto flex justify-between items-center sm:px-16 px-6 py-10">
             <Link href="/" className="flex justify-center items-center">
                 <Image 
                 src="/logo.svg"
