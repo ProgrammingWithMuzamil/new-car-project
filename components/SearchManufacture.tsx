@@ -5,8 +5,8 @@ import { Combobox, ComboboxButton, Transition } from "@headlessui/react";
 import Image from "next/image";
 import { manufacturers } from "@/constants";
 export const SearchManufacture = ({
-  manufacturer,
-  setmanufacture,
+  selected,
+  setSelected,
 }: SearchManufacturerProps) => {
   const [quary, setquary] = useState("");
 
@@ -21,7 +21,7 @@ export const SearchManufacture = ({
         );
   return (
     <div className="search-manufacturer">
-      <Combobox value={manufacturer} onChange={setmanufacture}>
+      <Combobox value={selected} onChange={setSelected}>
         <div className="relative w-full">
           <Combobox.Button className="absolute top-[14px]">
             <Image
